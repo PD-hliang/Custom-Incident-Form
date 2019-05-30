@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Update Ticket</title>
+</head>
+<body>
+
+
+<!-- Table for custom fields in incident -->
+<font size="2" face="Sans-serif" >
+<tbody>
+    <tr>
+        <td>
+            <p><span class="mandatory">*</span>Incident Classification</p>
+        </td>
+        <td>
+            <select name="close_code" style="width:200px" id="close_code">
+                <option value="none" selected="none">--None--</option>
+                <option value="False-positive">False-positive</option>
+                <option value="ThresholdTuningActionApplied">Threshold tuning action applied</option>
+                <option value="TurnedToRealIncident">Turned to real Incident</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p><span class="mandatory">*</span>Resolution category</p>
+        </td>
+        <td>
+            <select name="resolution_category" style="width:200px" id="resolution_category">
+                <option value="none" selected="none">--None--</option>
+                <option value="Reviewed">Reviewed</option>
+                <option value="NotReviewed">Not Reviewed</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p><span class="mandatory">*</span>Resolution notes</p>
+        </td>
+        <td>
+            <textarea name="close_notes" rows="3" cols="50" id="close_notes" value=""></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div id="validation_msg" class="validation_msg" name="validation_msg" style="display: none;">Please fill-in all the details</div>
+        </td>
+        <td>
+            <input type="submit" id="resolve" onclick="return validateResolve()" class="ig_button ig_resolve_btn" value="Resolve">
+        </td>
+    </tr>
+</tbody>
+</font>
+
+<script> 
+//grab incident ID from URL and regEx out
+var url = (window.location != window.parent.location)
+            ? document.referrer
+            : document.location.href;
+
+var regEx = /incidents\/(.*)/;
+//document.write(regEx.exec(url)[1])
+
+//validates fields have been filled in
+function validateResolve()
+{
+	
+	if(document.getElementById("close_code").value=='none' || document.getElementById("resolution_category").value=='none' || document.getElementById("close_notes").value=='')
+	{
+		document.getElementById("validation_msg").style.display = "block";
+		return false;
+	}
+	
+	else
+	{
+		//document.getElementById("hidden1").value = "hidden";
+		document.getElementById("validation_msg").style.display = "none";
+		alert("Your incident will be updated shortly. No further action required!");
+		return true;
+	}
+}
+
+
+</script>
+</body>
+</html>
