@@ -1,10 +1,11 @@
 # Custom-Incident-Form
 
-Custom Incident Form will give you the ability to create a form in each incident to perform custom actions e.g. update and external tool with custom fields
+Create a customised form in each incident to perform custom actions for incident in pagerduty e.g. update external tools with custom fields
 
 <img src="https://github.com/PD-hliang/Custom-Incident-Form/blob/master/imgs/Form%20Image.png" width="600">
 
-This is just a template to get started with and does nothing when you click on resolve besides checking whether the fields are empty or not. 
+# Notes
+This is just a template to get started with and does nothing when you click on resolve besides a check on whether the fields are empty or not. 
 
 # Installation
 
