@@ -5,7 +5,7 @@ Create a customised form in each incident to perform custom actions per incident
 <img src="https://github.com/PD-hliang/Custom-Incident-Form/blob/master/imgs/CustomForm.png" width="600">
 
 # Notes
-This is just a template to get started with and does nothing when you click on resolve besides a check on whether the fields are empty or not. 
+This is just a template to get started with and does nothing when you click on the buttons besides a check on whether the fields are empty or not. 
 
 # Installation
 
