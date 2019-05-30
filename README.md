@@ -1,6 +1,6 @@
 # Custom-Incident-Form
 
-Create a customised form in each incident to perform custom actions for incident in pagerduty e.g. update external tools with custom fields
+Create a customised form in each incident to perform custom actions per incident in pagerduty e.g. update external tools with custom fields
 
 <img src="https://github.com/PD-hliang/Custom-Incident-Form/blob/master/imgs/Form%20Image.png" width="600">
 
