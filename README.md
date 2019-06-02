@@ -2,10 +2,13 @@
 
 Create a customised form in each incident to perform custom actions per incident in pagerduty e.g. update external tools with custom fields
 
+This currently updates the notes section with the fields within the custom form as an example.
+
 <img src="https://github.com/PD-hliang/Custom-Incident-Form/blob/master/imgs/CustomForm.png" width="600">
 
 # Notes
-This is just a template to get started with and does nothing when you click on the buttons besides a check on whether the fields are empty or not. 
+* This is just a template to get started with so you will need to customise it to your needs.
+* An email linked to a pagerduty account is needed for this to update the notes section if you plan to use this specific functionality
 
 # Installation
 
