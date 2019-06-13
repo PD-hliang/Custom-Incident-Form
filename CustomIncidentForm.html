@@ -110,7 +110,7 @@ function buildPayload(){
     return payload
 }
 
-//send payload to pagerduty API 
+//send payload to pagerduty API - must change token in the header section below
 function sendPayload(payload){
 
     var email = document.getElementById("email")
@@ -118,7 +118,7 @@ function sendPayload(payload){
      $.ajax({
       method: "POST",
       url: "https://api.pagerduty.com/incidents/"+getIncidentID()+"/notes",
-      headers: { 'Accept': 'application/vnd.pagerduty+json;version=2', 'Authorization': 'Token token=QqhfHRGMkSHagYXz3zjN', 'Content-Type': 'application/json', 'From': email.value },
+      headers: { 'Accept': 'application/vnd.pagerduty+json;version=2', 'Authorization': 'Token token={API-TOKEN}', 'Content-Type': 'application/json', 'From': email.value },
       data: payload
     })
       .done(function( msg ) {
