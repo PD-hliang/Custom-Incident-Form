@@ -9,6 +9,7 @@ This currently updates the notes section with the fields within the custom form 
 # Notes
 * This is just a template to get started with so you will need to customise it to your needs.
 * An email linked to a pagerduty account is needed for this to update the notes section if you plan to use this specific functionality
+* You will need to add your own API key into the code to be able to send data using the PagerDuty API
 
 # Installation
 
